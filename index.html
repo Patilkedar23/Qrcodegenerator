@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scansync</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="icons/icon.png">
+</head>
+<body>
+    <!--start of wrapper-->
+    <section class="wrapper">
+        <!--start of header-->
+        <section class="header">
+            <div class="nav-bar">
+                <div class="logo-text">Scan<span class="sync">Sync</span></div>
+                <img src="icons/light-mode.png" class="mode-image" id="icon"> 
+            </div>
+            <div class="con-heading">Text → QR</div>
+            <div class="sub-header">Convert any text or url into QR</div>
+        </section>
+        <!--End of header-->
+        <!--start of input-->
+        <section class="input">
+            <div class="input-group">
+                <input type="text" class="user-input" id="userinput" placeholder="Enter a text or url" required>
+                    <div class="QR-code" id="imgbox">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=www.google.com " alt="The image cannot be Generated Enter proper value!" class="Qr-image" id="qrimg">
+                    </div>       
+                <button class="submit-btn" type="submit" onclick="generateQr()">Generate QR Code</button>
+                <button class="download-btn" type="submit" onclick="downloadQr()" id="download-btn">Download QR Code</button>
+            </div>
+        </section>
+        <!--End of input-->
+        <!--Start of footer-->
+        <section class="footer">
+            <div>
+                Crafted with ❤️ by <a href="https://github.com/Patilkedar23" class="link"><b>Kedar</b></a>
+            </div>
+        </section>
+        <!--End of footer-->
+</section>
+<!--End of wrapper-->
+
+
+<!--Javascript File-->
+<script src="script.js"></script>
+</body>
+</html>
